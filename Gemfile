@@ -2,10 +2,15 @@ source 'https://rubygems.org'
 
 #bootstrap
 gem 'bootstrap-sass', '~> 3.3.7'
+gem "bootstrap_form"
 #jquery
 gem 'jquery-rails'
 #user
 gem 'devise'
+gem 'devise-bootstrap-views'
+#editor
+gem 'tinymce-rails'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
