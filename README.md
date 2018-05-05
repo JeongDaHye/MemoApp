@@ -32,3 +32,21 @@
 7. bootstrap_form gem 설치
 
 8. tinymce gem 설치
+
+9. new.html.erb
+ * <%=f.hidden_field :user_id, value: current_user.id%> 
+    * 비밀로 user의 현재 아이디 전송
+    
+10. memos_controller.rb
+ * show action 추가하기
+ * show action을 추가했으니 view에도 show.html.erb추가
+ 
+* 수평선 그리기 -> <hr>tag
+
+11. app -> views
+* show.html.erb 작성
+* index.html.erb 작성
+
+
+
+
