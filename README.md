@@ -41,7 +41,8 @@
  * show action 추가하기
  * show action을 추가했으니 view에도 show.html.erb추가
  
-* 수평선 그리기 -> <hr>tag
+* 수평선 그리기(<hr> tag)
+  <hr>
 
 11. app -> views
 * show.html.erb 작성

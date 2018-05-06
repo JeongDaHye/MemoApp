@@ -1,9 +1,3 @@
-<%=bootstrap_form_for(@memo) do |f|%>
-    <%=f.hidden_field :user_id, value: current_user.id%>
-    <%=f.text_field :title, label: '제목'%> <br>
-    <%= f.text_area :content, label: '내용',class: "tinymce",
-    rows: 20, cols: 90 %>
-    <br>
-    <%=f.submit '작성'%>
-    <%= tinymce %>
-<%end%>
+<h1>글 작성 페이지</h1>
+<hr>
+<%=render 'form'%>
