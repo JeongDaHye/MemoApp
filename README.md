@@ -40,14 +40,30 @@
 10. memos_controller.rb
  * show action 추가하기
  * show action을 추가했으니 view에도 show.html.erb추가
- 
-* 수평선 그리기(<hr> tag)
-  <hr>
 
 11. app -> views
 * show.html.erb 작성
 * index.html.erb 작성
+* edit.html.erb 작성
 
+12. 처음 작성한 글이 제일 아래 보이도록 설정
+* index action 수정
+    * @memos = Memo.order(created_at: :DESC)
 
+13. index와 show 페이지는 로그인 하지 않아도 보이도록 설정
+* before_action :authenticate_user!, except: [:index, :show]
 
+14. memos_controller 리팩토링
 
+15. comment 기능 구현
+* user와 memo 모두와 1 : N관계를 형성
+* create action 추가
+* destroy action 추가
+
+16. 유효성 검사(validates)
+
+17. flash 메시지 생성
+
+18. i18n통한 국제화 구현
+* gem 'rails-i18n' 설치
+* gem 'devise-i18n' 설치

@@ -10,7 +10,9 @@ gem 'devise'
 gem 'devise-bootstrap-views'
 #editor
 gem 'tinymce-rails'
-
+#i18n
+gem 'rails-i18n'
+gem 'devise-i18n'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
